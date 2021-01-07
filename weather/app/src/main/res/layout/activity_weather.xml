@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherActivity">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="100"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="95"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/city_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="30"
+                            android:foregroundGravity="center"
+                            android:text="-----"
+                            android:textAlignment="center"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/refresh"
+                            style="@style/Widget.MaterialComponents.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="100"
+                            android:text="刷新天气"
+                            android:textAlignment="center"
+                            android:textSize="10sp" />
+                        <Button
+                            android:id="@+id/star"
+                            style="@style/Widget.MaterialComponents.Button"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="100"
+                            android:text="收藏"
+                            android:textAlignment="center"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="110">
+
+                        <TextView
+                            android:id="@+id/update_time"
+                            android:layout_width="fill_parent"
+                            android:layout_height="42dp"
+                            android:layout_weight="100"
+                            android:foregroundGravity="center"
+                            android:text="----"
+                            android:textAlignment="center"
+                            android:textAllCaps="true" />
+
+                        <TextView
+                            android:id="@+id/update_date"
+                            android:layout_width="fill_parent"
+                            android:layout_height="42dp"
+                            android:layout_weight="100"
+                            android:foregroundGravity="center"
+                            android:text="----"
+                            android:textAlignment="center"
+                            android:textAllCaps="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="110">
+
+                        <TextView
+                            android:id="@+id/pm25"
+                            android:layout_width="fill_parent"
+                            android:layout_height="42dp"
+                            android:layout_weight="100"
+                            android:foregroundGravity="center"
+                            android:text="----"
+                            android:textAlignment="center"
+                            android:textAllCaps="true" />
+
+                        <TextView
+                            android:id="@+id/pm10"
+                            android:layout_width="fill_parent"
+                            android:layout_height="42dp"
+                            android:layout_weight="100"
+                            android:foregroundGravity="center"
+                            android:text="----"
+                            android:textAlignment="center"
+                            android:textAllCaps="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="110">
+
+                        <TextView
+                            android:id="@+id/shidu"
+                            android:layout_width="fill_parent"
+                            android:layout_height="42dp"
+                            android:layout_weight="100"
+                            android:foregroundGravity="center"
+                            android:text="----"
+                            android:textAlignment="center"
+                            android:textAllCaps="true" />
+
+                        <TextView
+                            android:id="@+id/quality"
+                            android:layout_width="fill_parent"
+                            android:layout_height="42dp"
+                            android:layout_weight="100"
+                            android:foregroundGravity="center"
+                            android:text="----"
+                            android:textAlignment="center"
+                            android:textAllCaps="true" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/temperature"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="90"
+                        android:foregroundGravity="center"
+                        android:text="----"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/today_notice"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="105"
+                        android:foregroundGravity="center"
+                        android:text="-----"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="150"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:id="@+id/yesterday_u"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_weight="100"
+                        android:foregroundGravity="center"
+                        android:text="---"
+                        android:textAlignment="center"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/yesterday_d"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_weight="100"
+                        android:foregroundGravity="center"
+                        android:text="---"
+                        android:textAlignment="center"
+                        android:textAllCaps="true" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:id="@+id/today_u"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_weight="100"
+                        android:foregroundGravity="center"
+                        android:text="---"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/today_d"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_weight="100"
+                        android:foregroundGravity="center"
+                        android:text="---"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:id="@+id/day2_u"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_weight="100"
+                        android:foregroundGravity="center"
+                        android:text="---"
+                        android:textAlignment="center"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/day2_d"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_weight="100"
+                        android:foregroundGravity="center"
+                        android:text="---"
+                        android:textAlignment="center"
+                        android:textAllCaps="true" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:id="@+id/day3_u"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_weight="100"
+                        android:foregroundGravity="center"
+                        android:text="---"
+                        android:textAlignment="center"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/day3_d"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_weight="100"
+                        android:foregroundGravity="center"
+                        android:text="---"
+                        android:textAlignment="center"
+                        android:textAllCaps="true" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:id="@+id/day4_u"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_weight="100"
+                        android:foregroundGravity="center"
+                        android:text="---"
+                        android:textAlignment="center"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/day4_d"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_weight="100"
+                        android:foregroundGravity="center"
+                        android:text="---"
+                        android:textAlignment="center"
+                        android:textAllCaps="true" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="100">
+
+                    <TextView
+                        android:id="@+id/day5_u"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_weight="100"
+                        android:foregroundGravity="center"
+                        android:text="---"
+                        android:textAlignment="center"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/day5_d"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_weight="100"
+                        android:foregroundGravity="center"
+                        android:text="---"
+                        android:textAlignment="center"
+                        android:textAllCaps="true" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+<!--<TextView-->
+<!--android:id="@+id/textView6"-->
+<!--android:layout_width="345dp"-->
+<!--android:layout_height="42dp"-->
+<!--android:background="@drawable/shape"-->
+<!--android:foregroundGravity="center"-->
+<!--android:layout_marginLeft="16dp"-->
+<!--android:layout_marginTop="16dp"-->
+<!--android:layout_marginRight="16dp"-->
+<!--app:layout_constraintLeft_toLeftOf="parent"-->
+<!--app:layout_constraintTop_toTopOf="parent"-->
+<!--app:layout_constraintRight_toRightOf="parent"-->
+<!--android:text="TextView"/>-->
