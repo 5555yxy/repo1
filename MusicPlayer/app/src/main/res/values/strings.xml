@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">音乐</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Music Player</string>
+    <string name="nav_header_subtitle">go0gle@outlook.com</string>
+    <string name="nav_header_desc">2016011237</string>
+    <string name="action_settings">关于</string>
+    <string name="title_activity_star">我的收藏</string>
+    <string name="title_activity_online">OnlineActivity</string>
+</resources>

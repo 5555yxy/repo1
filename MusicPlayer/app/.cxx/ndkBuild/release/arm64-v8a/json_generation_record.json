@@ -1,0 +1,62 @@
+[
+  {
+    "level": "INFO",
+    "message": "Start JSON generation. Platform version: 21 min SDK version: arm64-v8a",
+    "file": "D:\\AndroidProject\\MusicPlayer\\app\\src\\main\\jni\\Android.mk",
+    "tag": "release|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "rebuilding JSON D:\\AndroidProject\\MusicPlayer\\app\\.cxx\\ndkBuild\\release\\arm64-v8a\\android_gradle_build.json due to:",
+    "file": "D:\\AndroidProject\\MusicPlayer\\app\\src\\main\\jni\\Android.mk",
+    "tag": "release|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "- expected json D:\\AndroidProject\\MusicPlayer\\app\\.cxx\\ndkBuild\\release\\arm64-v8a\\android_gradle_build.json file is not present, will remove stale json folder",
+    "file": "D:\\AndroidProject\\MusicPlayer\\app\\src\\main\\jni\\Android.mk",
+    "tag": "release|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "- missing previous command file D:\\AndroidProject\\MusicPlayer\\app\\.cxx\\ndkBuild\\release\\arm64-v8a\\build_command.txt, will remove stale json folder",
+    "file": "D:\\AndroidProject\\MusicPlayer\\app\\src\\main\\jni\\Android.mk",
+    "tag": "release|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "- command changed from previous, will remove stale json folder",
+    "file": "D:\\AndroidProject\\MusicPlayer\\app\\src\\main\\jni\\Android.mk",
+    "tag": "release|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "removing stale contents from \u0027D:\\AndroidProject\\MusicPlayer\\app\\.cxx\\ndkBuild\\release\\arm64-v8a\u0027",
+    "file": "D:\\AndroidProject\\MusicPlayer\\app\\src\\main\\jni\\Android.mk",
+    "tag": "release|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "created folder \u0027D:\\AndroidProject\\MusicPlayer\\app\\.cxx\\ndkBuild\\release\\arm64-v8a\u0027",
+    "file": "D:\\AndroidProject\\MusicPlayer\\app\\src\\main\\jni\\Android.mk",
+    "tag": "release|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "executing ndkBuild Executable : D:\\SDK\\ndk\\22.0.7026061\\ndk-build.cmd\narguments : \nNDK_PROJECT_PATH\u003dnull\nAPP_BUILD_SCRIPT\u003dD:\\AndroidProject\\MusicPlayer\\app\\src\\main\\jni\\Android.mk\nNDK_APPLICATION_MK\u003dD:\\AndroidProject\\MusicPlayer\\app\\src\\main\\jni\\Application.mk\nAPP_ABI\u003darm64-v8a\nNDK_ALL_ABIS\u003darm64-v8a\nNDK_DEBUG\u003d0\nAPP_PLATFORM\u003dandroid-21\nNDK_OUT\u003dD:/AndroidProject/MusicPlayer/app/build/intermediates/ndkBuild/release/obj\nNDK_LIBS_OUT\u003dD:\\AndroidProject\\MusicPlayer\\app\\build\\intermediates\\ndkBuild\\release\\lib\nAPP_SHORT_COMMANDS\u003dfalse\nLOCAL_SHORT_COMMANDS\u003dfalse\n-B\n-n\njvmArgs : \n\n",
+    "file": "D:\\AndroidProject\\MusicPlayer\\app\\src\\main\\jni\\Android.mk",
+    "tag": "release|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "Executable : D:\\SDK\\ndk\\22.0.7026061\\ndk-build.cmd\narguments : \nNDK_PROJECT_PATH\u003dnull\nAPP_BUILD_SCRIPT\u003dD:\\AndroidProject\\MusicPlayer\\app\\src\\main\\jni\\Android.mk\nNDK_APPLICATION_MK\u003dD:\\AndroidProject\\MusicPlayer\\app\\src\\main\\jni\\Application.mk\nAPP_ABI\u003darm64-v8a\nNDK_ALL_ABIS\u003darm64-v8a\nNDK_DEBUG\u003d0\nAPP_PLATFORM\u003dandroid-21\nNDK_OUT\u003dD:/AndroidProject/MusicPlayer/app/build/intermediates/ndkBuild/release/obj\nNDK_LIBS_OUT\u003dD:\\AndroidProject\\MusicPlayer\\app\\build\\intermediates\\ndkBuild\\release\\lib\nAPP_SHORT_COMMANDS\u003dfalse\nLOCAL_SHORT_COMMANDS\u003dfalse\n-B\n-n\njvmArgs : \n\n",
+    "file": "D:\\AndroidProject\\MusicPlayer\\app\\src\\main\\jni\\Android.mk",
+    "tag": "release|arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "JSON generation completed with problem. Exception: Build command failed.\nError while executing process D:\\SDK\\ndk\\22.0.7026061\\ndk-build.cmd with arguments {NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\AndroidProject\\MusicPlayer\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\AndroidProject\\MusicPlayer\\app\\src\\main\\jni\\Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dD:/AndroidProject/MusicPlayer/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dD:\\AndroidProject\\MusicPlayer\\app\\build\\intermediates\\ndkBuild\\release\\lib APP_SHORT_COMMANDS\u003dfalse LOCAL_SHORT_COMMANDS\u003dfalse -B -n}\nAndroid NDK: D:\\AndroidProject\\MusicPlayer\\app\\src\\main\\jni\\Android.mk:NDKLib: LOCAL_MODULE_FILENAME must not contain a file extension    \n\nfcntl(): Bad file descriptor\nD:/SDK/ndk/22.0.7026061/build//../build/core/build-static-library.mk:26: *** Android NDK: Aborting    .  Stop.\n",
+    "file": "D:\\AndroidProject\\MusicPlayer\\app\\src\\main\\jni\\Android.mk",
+    "tag": "release|arm64-v8a"
+  }
+]

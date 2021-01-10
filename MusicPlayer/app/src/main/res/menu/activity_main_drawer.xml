@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="我的收藏" />
+        <item
+        android:id="@+id/nav_gallery"
+        android:icon="@drawable/ic_menu_send"
+        android:title="Free Music Archive(Online)" />
+        <item
+            android:id="@+id/nav_local"
+            android:icon="@drawable/ic_album_black_24dp"
+            android:title="本地乐曲" />
+        <item
+            android:id="@+id/nav_playing"
+            android:icon="@drawable/ic_headset_black_24dp"
+            android:title="正在播放"/>
+
+
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,39 @@
+[
+  {
+    "level": "INFO",
+    "message": "android.ndkVersion from module build.gradle is [not set]"
+  },
+  {
+    "level": "INFO",
+    "message": "android.ndkPath from module build.gradle is not set"
+  },
+  {
+    "level": "INFO",
+    "message": "ndk.dir in local.properties is D:\\SDK\\ndk-bundle"
+  },
+  {
+    "level": "INFO",
+    "message": "Not considering ANDROID_NDK_HOME because support was removed after deprecation period."
+  },
+  {
+    "level": "INFO",
+    "message": "sdkFolder is D:\\SDK"
+  },
+  {
+    "level": "INFO",
+    "message": "NDK side-by-side folder from sdkFolder D:\\SDK\\ndk does not exist"
+  },
+  {
+    "level": "INFO",
+    "message": "Because no explicit NDK was requested, the default version [21.3.6528147] for this Android Gradle Plugin will be used"
+  },
+  {
+    "level": "INFO",
+    "message": "Folder D:\\SDK\\ndk-bundle does not exist. Ignoring."
+  },
+  {
+    "level": "ERROR",
+    "message": "Location specified by ndk.dir (D:\\SDK\\ndk-bundle) did not contain a valid NDK and couldn\u0027t be used",
+    "diagnosticCode": "NDK_IS_INVALID"
+  }
+]
